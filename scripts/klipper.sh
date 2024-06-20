@@ -254,7 +254,7 @@ function clone_klipper() {
 
   [[ -z ${repo} ]] && repo="${KLIPPER_REPO}"
   repo=$(echo "${repo}" | sed -r "s/^(http|https):\/\/github\.com\///i; s/\.git$//")
-  repo="git@github.com:${repo}.git"
+  repo="${repo}.git"
 
   [[ -z ${branch} ]] && branch="master"
 
